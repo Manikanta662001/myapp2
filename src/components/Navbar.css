@@ -1,0 +1,17 @@
+#one
+{
+    color: fuchsia;
+    background-color: yellow;
+}
+.border {
+    border: 1px solid red;
+    height: 100px;
+    width: 14%;
+    margin: auto;
+    padding: 10px;
+}
+#im                                                                     
+{
+    width: 100%;
+    height: 100%;
+}
