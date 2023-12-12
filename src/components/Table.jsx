@@ -30,6 +30,9 @@ const Table = () => {
         console.log(filtered_data)
         setEmpInfo(filtered_data)
         SetshowContent(filtered_data.length !== 0 ? true : false)
+        if(id==Display?.Id){
+            setDisplay(null)
+        }
 
 
     }

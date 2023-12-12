@@ -1,4 +1,4 @@
-export default function Hai() {
+export default function () {
     // simulates data coming from a database.
     return Promise.resolve([
       {

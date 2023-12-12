@@ -1,6 +1,6 @@
 import React ,{ useState } from 'react';
 import './App.css';
-import Home,{name,age} from './Home'
+// import Home,{name,age} from './Home'
 import Navbar from './components/Navbar';
 import Condition,{Car,Garage,Football,Name} from './components/Condition';
 import Goal,{Elements} from './components/Goal';
@@ -20,7 +20,7 @@ import Homework_ from './components/Homework_';
 
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-// import Home from './Pages/Home';
+import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Footer from './Pages/Footer';
@@ -49,20 +49,21 @@ let [a1,b1,c1,d1]=arra
   console.log(arr3,'99')
   return (
     <div className="App">
-      {/* <Muilibrary/> */}
-      {/* <Counter/> */}
-    {/* <ClassCompo age={33}/>
+      {/* <Muilibrary/>
+      <Counter/>
+     <ClassCompo age={33}/> */}
       
-    <Counter/>
 
-      <Home />
-      {
+   {/* <Counter/> */}
+
+      {/* <Home /> */}
+      {/* {
         <div>
           <h2>{name}</h2>
           <p>{age}</p>
         </div>
-      }
-      <Navbar />
+      } */}
+      {/* <Navbar /> */}
       
       {
         arra.map((item)=>{
@@ -80,7 +81,7 @@ let [a1,b1,c1,d1]=arra
       
       
 
-      <Condition />
+      {/* <Condition />
       <Car color='red'/>
 
       <Garage />
@@ -92,13 +93,13 @@ let [a1,b1,c1,d1]=arra
       <Name age={22}/>
       <Names />
 
-      <Hooks /> 
+      <Hooks />  */}
       
-      <Table />
-      <Table2 />
-      <Fetching />
+      {/* <Table /> */}
+      {/* <Table2 /> */}
+      {/* <Fetching /> */}
  
-      <Classes/>
+      {/* <Classes/>
       <Cars hp='1000hp'/>
       <Garages/>
       <Humans city='HYB'/>
@@ -108,15 +109,15 @@ let [a1,b1,c1,d1]=arra
 
 <Displaying/>
 <ArrMethods/>
-<FunctionalComponents defined='true'/>
+<FunctionalComponents defined='true'/> */}
 
-<Homework/>
+{/* <Homework/>
 <Homework2/>
 
 
 <Homework_/> */}
 
-{/* <BrowserRouter>
+<BrowserRouter>
 
 <Routes>
   <Route path='/' element={<Home />}>
@@ -129,7 +130,7 @@ let [a1,b1,c1,d1]=arra
   </Route>
   
 </Routes>
-</BrowserRouter> */}
+</BrowserRouter>
 
 
       

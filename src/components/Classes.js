@@ -13,7 +13,7 @@ class Cars extends React.Component {
 
     }
     render() {
-        return <h2>I am a {this.state.color} Car with {this.props.hp}</h2>
+        return <h2>I am a {this.state.color} Car with {this.props.hp || "1500hp"}</h2>
     }
 }
 
@@ -41,10 +41,10 @@ class Humans extends React.Component {
         { this.state.name === 'Harshad' ? this.setState({ name: 'Santhosh' }) : this.setState({ name: 'Harshad' }) }
 
     }
-    // static getDerivedStateFromProps(props,state){
-    //     return {city:props.city}
+    static getDerivedStateFromProps(props,state){
+        return {city:props.city}
 
-    // }
+    }
     componentDidMount() {
         console.log('rendering')
         setTimeout(() => {
@@ -55,10 +55,14 @@ class Humans extends React.Component {
     shouldComponentUpdate() {
         return true
     }
+    componentDidUpdate(){
+        document.getElementById('update').innerHTML='component is updated'
+    }
     render() {
         return <>
             <p>Name is {this.state.name}, role is {this.state.role},and he living in {this.state.city} and he has {this.state.exp} experience</p>
             <button onClick={this.changeName}>click here to Change name</button>
+            <div id='update'></div>
         </>
     }
 }
